@@ -2,14 +2,22 @@
 
 C++ lab solutions for BS Software Engineering, UAJK (2025–2029).
 
-| Folder | Topics |
-|---|---|
-| LAB-01 | Array input and display |
-| LAB-02 | Array insertion, deletion, searching and display |
-| LAB-03 | Singly and doubly linked lists |
+| Lab | Task | Solution |
+|---|---|---|
+| LAB-01 | Array input and display | array_input_display.cpp |
+| LAB-02 | Insertion | array_insertion.cpp |
+| LAB-02 | Deletion | array_deletion.cpp |
+| LAB-02 | Searching | array_searching.cpp |
+| LAB-03 | Doubly linked list | doubly_linked_list.cpp |
+| LAB-03 | Singly linked list | singly_linked_list.cpp |
 
-Each folder includes solutions, examples, explanations and notes. Compile each `.cpp` file separately because each contains its own `main()` function.
+All six tasks from the supplied sheet have separate solutions. LAB-02 also includes array_operations.cpp as an additional combined menu, giving seven runnable programs in total.
 
-Example: `g++ -std=c++11 LAB-01/array_input_display.cpp -o lab1`
+Each lab folder includes explanations and examples. Compile each .cpp file separately because each contains its own main function.
 
-Run with `./lab1` (or `./lab1.exe` on Windows).
+```sh
+g++ -std=c++11 -Wall -Wextra -pedantic LAB-01/array_input_display.cpp -o lab1
+./lab1
+```
+
+Use the relevant source path for other tasks. On Windows, use an .exe output name and run ./lab1.exe.

@@ -1,17 +1,24 @@
-# Lab 2 — Operations on Arrays
+# Lab 2 — Array Operations
 
-**Task:** Perform insertion, deletion and searching.
+Each task is a separate C++ program. Positions start at 1; array indices start at 0. Capacity is 100 integers.
 
-| Operation | Steps | Time |
-|---|---|---|
-| Insert | Validate capacity/position, shift elements right, place value, increase size | O(n) worst case |
-| Delete | Validate position, shift remaining elements left, decrease size | O(n) worst case |
-| Search | Compare the target with every element and report all matching positions | O(n) |
+| Task | File | Example input | Expected result |
+|---|---|---|---|
+| 1. Insertion | array_insertion.cpp | `3 10 20 30 2 15` | Array: 10 15 20 30 |
+| 2. Deletion | array_deletion.cpp | `3 10 20 30 2` | Array: 10 30 |
+| 3. Searching | array_searching.cpp | `3 10 20 30 20` | Found at position 2 |
 
-**Worked example:** Start with `[10, 20, 30]`. Insert 15 at position 2 to get `[10, 15, 20, 30]`. Delete position 3 to get `[10, 15, 30]`. Search for 30: position 3.
+Input starts with the size, followed by the array elements. Insertion then takes a position and value; deletion takes a position; searching takes a value.
 
-**Example input sequence:** `3 10 20 30 1 2 15 2 3 3 30 0`
+Insertion shifts elements right, deletion shifts them left, and linear search compares each element. All take O(n) time in the worst case and O(1) extra storage.
 
-The first number is the initial size; the next three are elements. Then choose insert (1), supply position/value (2/15), choose delete (2), supply position (3), choose search (3), supply target (30), and exit (0).
+**Roman Urdu:** Insertion mein elements right shift kar ke naya number rakhte hain. Deletion mein selected position hata kar baqi elements left shift karte hain. Searching mein har number ko target se compare karte hain. Duplicate numbers hon to tamam matching positions dikhayi jati hain.
 
-**Roman Urdu:** Insertion mein jagah banane ke liye elements right shift hote hain. Deletion mein khaali jagah bharne ke liye left shift hote hain. Searching mein har element ko target se compare karte hain. Position 1 ka matlab array index 0 hai.
+Compile one file at a time, for example from the repository root:
+
+```sh
+g++ -std=c++11 -Wall -Wextra -pedantic LAB-02/array_insertion.cpp -o insertion
+./insertion
+```
+
+`array_operations.cpp` is also available as a combined menu for practice.
