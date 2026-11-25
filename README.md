@@ -1,12 +1,3 @@
 # Data Structures and Algorithms (C++)
 
-A collection of C++ laboratory assignments.
-
-| Lab | Task | Source code |
-| --- | --- | --- |
-| 01 | Array insertion | [Task 1](LAB-01/Array-Insertion.cpp) |
-| 01 | Array deletion | [Task 2](LAB-01/Array-Deletion.cpp) |
-| 02 | Doubly linked list | [Task 3](LAB-02/Doubly-Linked-List.cpp) |
-| 03 | Singly linked list | [Task 4](LAB-03/Singly-Linked-List.cpp) |
-
-Each program is standalone and should be compiled separately with a C++ compiler. Array positions are one-based. Linked list programs accept five integers and display the node count.
+This repository contains laboratory tasks and practical implementations of fundamental data structures and algorithms using C++. It is organized into lab-wise folders and focuses on developing problem-solving skills, understanding core programming concepts, and applying data structures through hands-on practice.
