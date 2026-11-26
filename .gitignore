@@ -1,7 +1,4 @@
 *.exe
 *.out
 /build/
-lab1
-lab2
-singly
-doubly
+lab

@@ -1,23 +1,17 @@
-# Data Structures and Algorithms
+# Data Structures and Algorithms — Seven Labs
 
-C++ lab solutions for BS Software Engineering, UAJK (2025–2029).
+BS Software Engineering, UAJK | Session 2025–2029
 
-| Lab | Task | Solution |
+| Lab | Topic | Programs |
 |---|---|---|
-| LAB-01 | Array input and display | array_input_display.cpp |
-| LAB-02 | Insertion | array_insertion.cpp |
-| LAB-02 | Deletion | array_deletion.cpp |
-| LAB-02 | Searching | array_searching.cpp |
-| LAB-03 | Doubly linked list | doubly_linked_list.cpp |
-| LAB-03 | Singly linked list | singly_linked_list.cpp |
+| 1 | [Array Basics](LAB-01_Array_Basics/) | `array_basic.cpp` |
+| 2 | [Array Insertion](LAB-02_Array_Insertion/) | `insertion_by_address.cpp`, `insertion_by_value.cpp` |
+| 3 | [Array Deletion](LAB-03_Array_Deletion/) | `deletion_by_address.cpp`, `deletion_by_value.cpp` |
+| 4 | [Linear Search](LAB-04_Linear_Search/) | `linear_search.cpp` |
+| 5 | [Binary Search](LAB-05_Binary_Search/) | `binary_search.cpp` |
+| 6 | [Singly Linked List](LAB-06_Singly_Linked_List/) | `singly_linked_list.cpp` |
+| 7 | [Doubly Linked List](LAB-07_Doubly_Linked_List/) | `doubly_linked_list.cpp` |
 
-All six tasks from the supplied sheet have separate solutions. LAB-02 also includes array_operations.cpp as an additional combined menu, giving seven runnable programs in total.
+Nine independent C++ programs cover the seven lab topics. Each has its own main function: compile one source file at a time. Each lab folder includes task explanations, examples, compilation instructions and Roman Urdu notes.
 
-Each lab folder includes explanations and examples. Compile each .cpp file separately because each contains its own main function.
-
-```sh
-g++ -std=c++11 -Wall -Wextra -pedantic LAB-01/array_input_display.cpp -o lab1
-./lab1
-```
-
-Use the relevant source path for other tasks. On Windows, use an .exe output name and run ./lab1.exe.
+Arrays use a capacity of 100 integers and 1-based user positions. Invalid sizes, malformed numeric input, full-array insertions and invalid positions are rejected. Value-based insertion inserts before the first matching target; value-based deletion removes the first match. Address-based operations use a real pointer derived from a validated position, not an arbitrary typed memory address. Binary search requires ascending input and returns the first match. Linked lists release all allocated nodes.
